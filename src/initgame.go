@@ -6,12 +6,12 @@ type Joueur struct {
 }
 
 type Partie struct {
-	Grille         [][]string
-	Joueur1        Joueur
-	Joueur2        Joueur
+	Grille          [][]string
+	Joueur1         Joueur
+	Joueur2         Joueur
 	JoueurCommence  Joueur
-	NombreTours    int
-	PartieEnCours  bool
+	NombreTours     int
+	PartieEnCours   bool
 }
 
 func InitialiserPartie() Partie {
@@ -30,11 +30,11 @@ func InitialiserPartie() Partie {
 	joueur2 := Joueur{Nom: "Joueur 2", Symbole: "O"}
 
 	return Partie{
-		Grille:        grille,
-		Joueur1:       joueur1,
-		Joueur2:       joueur2,
+		Grille:         grille,
+		Joueur1:        joueur1,
+		Joueur2:        joueur2,
 		JoueurCommence: joueur1,
-		NombreTours:   0,
-		PartieEnCours: true,
+		NombreTours:    0,
+		PartieEnCours:  true,
 	}
 }

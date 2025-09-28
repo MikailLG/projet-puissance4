@@ -7,10 +7,8 @@ import (
 
 func main() {
 	partie := src.InitialiserPartie()
-	for _, ligne := range partie.Grille {
-		fmt.Println(ligne)
-	}
-	fmt.Printf("C'est au tour de %s (%s)\n",
+	src.AfficherGrille(partie.Grille)
+	fmt.Printf("C'est au tour du %s (%s)\n",
 		partie.JoueurCommence.Nom,
 		partie.JoueurCommence.Symbole,
 	)
